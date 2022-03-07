@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <title>The Basic Language od the Web: HTML</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -16,14 +16,17 @@
         <a href="#">CSS grid</a>
       </nav>
     </header>
-    
+
     <article>
       <header>
         <h2>The Basic Language of the Web: HTML</h2>
         <img src="img/laura-jones.jpg" alt="Author picture" width="50" />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
         <img src="img/post-img.jpg" alt="HTML code on the screen" width="500" />
       </header>
+      <p>
         All modern websites and web applications are built using three
         <em>fundamental</em>
         technologies: HTML, CSS and JavaScript. These are the languages of the
@@ -78,12 +81,33 @@
     </article>
     <aside>
       <h4>Related posts</h4>
-      <ul>
-        <li><img src="img/related-1.jpg" alt="First related picture" width="75"><a href="#">How to learn Web Development</a><p>By Muhamed Ajanovic</p></li>
-        <li><img src="img/related-2.jpg" alt="Second related picture" width="75"><a href="#">The Unknown Powers of CSS</a><p>By Jonas</p></li>
-        <li><img src="img/related-3.jpg" alt="Third related picture" width="75"><a href="#">Why JS is Awesome</a><p>By NN</p></li>
+      <ul class="related">
+        <li>
+          <img
+            src="img/related-1.jpg"
+            alt="First related picture"
+            width="75"
+          /><a href="#">How to learn Web Development</a>
+          <p class="related-author">By Muhamed Ajanovic</p>
+        </li>
+        <li>
+          <img
+            src="img/related-2.jpg"
+            alt="Second related picture"
+            width="75"
+          /><a href="#">The Unknown Powers of CSS</a>
+          <p class="related-author">By Jonas</p>
+        </li>
+        <li>
+          <img
+            src="img/related-3.jpg"
+            alt="Third related picture"
+            width="75"
+          /><a href="#">Why JS is Awesome</a>
+          <p class="related-author">By NN</p>
+        </li>
       </ul>
     </aside>
-    <footer><p>Copyright &copy; 2022 by Muhamed</p></footer>
+    <footer><p id="copyright">Copyright &copy; 2022 by Muhamed</p></footer>
   </body>
 </html>
