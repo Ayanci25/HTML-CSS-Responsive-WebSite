@@ -176,27 +176,36 @@ body {
   margin-top: 30px;
 } */
 
-.containers {
-  display: flex;
-  gap: 40px;
-}
-
 .left_container {
   height: 250px;
 }
 
 .center_container {
   padding-top: 20px;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .right_container {
   padding-top: 20px;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .price_and_shipping {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+}
+
+.product-title {
+  grid-column: 1 / -1;
+}
+
+.add-cart {
+  grid-column: 1 / -1;
 }
